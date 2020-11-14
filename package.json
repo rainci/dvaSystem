@@ -7,8 +7,13 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.3.0",
+    "antd": "^4.8.2",
+    "babel-plugin-import": "^1.13.1",
     "dva": "^2.4.1",
-    "react": "^16.2.0",
+    "dva-loading": "^3.0.21",
+    "history": "^5.0.0",
+    "react": "^16.14.0",
     "react-dom": "^16.2.0"
   },
   "devDependencies": {

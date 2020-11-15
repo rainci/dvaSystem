@@ -12,7 +12,10 @@
     "babel-plugin-import": "^1.13.1",
     "dva": "^2.4.1",
     "dva-loading": "^3.0.21",
+    "fs": "^0.0.1-security",
     "history": "^5.0.0",
+    "mockjs": "^1.1.0",
+    "path": "^0.12.7",
     "react": "^16.14.0",
     "react-dom": "^16.2.0"
   },

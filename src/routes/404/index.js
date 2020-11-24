@@ -4,7 +4,7 @@ import { Empty } from 'antd';
 const NotFound = () => {
     return (
        <div>
-           <Empty />
+           404飞跑啦！
        </div> 
     )
 }

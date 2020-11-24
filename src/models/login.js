@@ -22,7 +22,7 @@ export default {
       if (code === 200) {//请求成功
         yield put({ type: 'login', payload });//同步到redux中
         yield put(routerRedux.push({//路由跳转
-          pathname: '/main'
+          pathname: '/main/hello'
         }))
         yield select(({ login: { username } }) => {
           sessionStorage.setItem('userInfo', username)//设置本地缓存

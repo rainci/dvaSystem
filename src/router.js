@@ -9,14 +9,14 @@ const { ConnectedRouter } = routerRedux;
 function RouterConfig({ history }) {
   return (
     <Router history={history}>
-      <Switch>
-        <Route path="/" exact component={IndexPage} />
-        <Main>
-            <Route path="/main/hello" component={MainIndex} />
-            <Route path="/main/user" component={User} />
-            <Route path="*" component={NotFound} />
-        </Main>
-      </Switch>
+      <Main>
+        <Switch>
+          <Route path="/" exact component={IndexPage} />
+          <Route path="/main/hello" component={MainIndex} />
+          <Route path="/main/user" component={User} />
+          <Route path="*" component={NotFound} />
+        </Switch>
+      </Main>
     </Router>
   );
 }

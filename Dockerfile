@@ -15,9 +15,10 @@ CMD [ "npm", "start" ]
 
 # run build
 RUN npm run build
-
+# Use the official image as a parent image.
 FROM nginx as BUILD2
 
 COPY --from=BUILD /opt/dist /usr/share/nginx/html/
 
-#docker build -t  firstdocker .
+#build image order:  docker build -t  firstdocker .
+#start image order: docker run -it --rm -p 2222:80 firstdocker:latest（or  docker run -it --rm -p 2222:80  10b9877979bf(imageId) ）

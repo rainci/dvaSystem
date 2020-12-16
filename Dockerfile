@@ -8,8 +8,10 @@ COPY package.json ./
 RUN npm --registry https://registry.npm.taobao.org install
 # copy the rest files from your host to your current location.
 COPY . ./  
-# Add metadata to the image to describe which port the container is listening on at runtime.
-EXPOSE 2222
+
+# Add metadata to the image to describe which port the container is listening on at runtime.（default 80/tcp）
+EXPOSE 80/tcp
+
 # Run the specified command within the container.
 CMD [ "npm", "start" ]
 
